@@ -7,7 +7,7 @@ import Header from './Components/Header';
 import Navbar from './Components/Navbar';
 // import Home from './Components/Home';
 // import EventsContainer from './Containers/EventsResourcesContainer';
-//import UserContainer from './Containers/UserContainer'
+//  import UserContainer from './Containers/UserContainer'
 
 
 // import { Route, Switch } from "react-router-dom";
