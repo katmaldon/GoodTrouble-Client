@@ -48,26 +48,29 @@ class Signup extends Component {
         }
     }
 
+    /// flip card for login and signup
+
+
     render() {
         return (
             <Segment placeholder>
                 <div className="signup_form">
                     <Grid columns={2} relaxed='very' stackable>
                         <Grid.Column>
-                        <Divider vertical><h2>Ready to join the EventsInc community?</h2></Divider>
+                        <Divider vertical><h2>Don't have an account yet?</h2></Divider>
                             <Form>
                                 <Form.Input
                                     icon='user'
                                     iconPosition='left'
-                                    label='Username'
-                                    placeholder='Pick a name, any name...'
+                                    label='username'
+
                                 /><br></br>
                                 <Form.Input
                                     icon='lock'
                                     iconPosition='left'
                                     label='Password'
                                     type='password'
-                                    placeholder='Password123...NOT!'
+
 
                                 /><br></br>
                                      <Form.Input
@@ -75,10 +78,12 @@ class Signup extends Component {
                                     iconPosition='left'
                                     label='Confirm password'
                                     type='password'
-                                    placeholder='One more time...'
+
                                     />
 
                             <Button content='sign up' icon='signup' size='big' />
+                            <br></br><br></br>
+                            <Divider vertical><a href="localhost:3000/events">Continue to page as guest</a></Divider>
 
                             </Form>
                         </Grid.Column>
@@ -87,9 +92,6 @@ class Signup extends Component {
                     </Grid>
                 </div>
                 <br></br>
-
-
-
             </Segment>
 
         )

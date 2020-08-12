@@ -7,11 +7,13 @@ class ProfileContainer extends React.Component {
 
     render() {
         return (
-            <div>
-                <UserContainer />
-                <FavoritesContainer />
-                <NotesContainer />
-            </div>
+
+            <div>PROFILE</div>
+            // <div>
+            //     <UserContainer />
+            //     <FavoritesContainer />
+            //     <NotesContainer />
+            // </div>
         );
     }
 

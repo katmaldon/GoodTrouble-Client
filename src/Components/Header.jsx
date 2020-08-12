@@ -1,13 +1,12 @@
+
 import React from 'react'
-//import { Header, Image } from 'semantic-ui-react'
+import { Header, Image } from 'semantic-ui-react'
 
-const Header = () => (
-//   <Header as='h2'>
-//     <Image circular src="https://i.imgur.com/cKZXTvA.jpg" alt="EventPlanner" id="header"/>
-//     {/* <Image circular src='/images/avatar/large/patrick.png' /> Patrick */}
-//   </Header>
+const HeaderImg = () => (
+  <Header as='h2'>
+    <Image src="https://i.imgur.com/jnfNclU.jpg" alt="GoodTrouble" id="header"/>
 
-<div> HEADER </div>
+  </Header>
 )
 
-export default Header;
+export default HeaderImg

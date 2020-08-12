@@ -1,21 +1,18 @@
 import React from 'react';
-import Signup from './Signup'
-import Login from './Login'
-import Greeting from './Greeting'
+//import Signup from '../Components/Signup'
+import Auth from '../Components/Auth'
 
 
-class ProfileContainer extends React.Component {
+class HomeContainer extends React.Component {
 
     render() {
         return (
             <div>
-                <Greeting/>
-                <Login />
-                <Signup />
+                <Auth />
             </div>
         );
     }
 
 }
 
-export default ProfileContainer;
+export default HomeContainer;

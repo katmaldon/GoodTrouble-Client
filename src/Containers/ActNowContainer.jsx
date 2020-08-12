@@ -1,15 +1,16 @@
 import React from 'react';
-import PetitionsContainer from '../Components/PetitionsContainer';
-import DonationsContainer from '../Components/DonationsContainer';
+import PetitionsContainer from './PetitionsContainer';
+import DonationsContainer from './DonationsContainer';
 
 class ActNowContainer extends React.Component {
 
    render() {
         return (
-            <div>
-                <DonationsContainer/>
-                <PetitionsContainer/>
-            </div>
+            <div>ACT NOW</div>
+            // <div>
+            //     <DonationsContainer/>
+            //     <PetitionsContainer/>
+            // </div>
         );
     };
 };

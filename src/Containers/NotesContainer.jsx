@@ -1,6 +1,6 @@
 
 import React from 'react';
-import NotesCollection from '../NotesCollection'
+import NotesCollection from '../Components/NotesCollection'
 import NotesForm from '../Components/NotesForm'
 
 class NotesContainer extends React.Component {

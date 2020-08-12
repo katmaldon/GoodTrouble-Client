@@ -2,31 +2,31 @@ import React from 'react';
 import BooksCollection from '../Components/BooksCollection';
 
 class BooksContainer extends React.Component {
-    state = {
-        Books: []
-    }
+    // state = {
+    //     books: []
+    // }
 
-    fetchBooks = () => {
-        fetch('http://localhost:3000/books')
-            .then(r => r.json())
-            .then(books => {
-                this.setState({ books });
-            });
-    };
+    // fetchBooks = () => {
+    //     fetch('http://localhost:3000/books')
+    //         .then(r => r.json())
+    //         .then(books => {
+    //             this.setState({ books });
+    //         });
+    // };
 
-    componentDidMount() {
-        this.fetchBooks()
-    };
+    // componentDidMount() {
+    //     this.fetchBooks()
+    // };
 
-    render() {
-        return (
-            <div>
-                <BooksCollection
-                    books={books}
-                />
-            </div>
-        );
-    };
+    // render() {
+    //     return (
+    //         <div>
+    //             <BooksCollection
+    //                 books={books}
+    //             />
+    //         </div>
+    //     );
+    // };
 };
 
 export default BooksContainer;

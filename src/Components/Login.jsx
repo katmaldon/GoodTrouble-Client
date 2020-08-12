@@ -63,32 +63,27 @@ class Login extends Component {
             <div className="login_form">
                 <Form onSubmit={this.handleSubmit}>
                     <div>
-                        <Divider vertical><h2>Welcome back! Let's get into it...</h2></Divider>
+                        <Divider vertical><h2>log in</h2></Divider>
                         <Form.Input
                             name="name"
                             label='username'
                             value={this.state.name}
-                            placeholder='pick a name, any name...'
                             onChange={this.handleChange}
-                            placeholder="username"
-                        />
+
+                        /><br></br>
                         <Form.Input
                             name="password"
                             value={this.state.password}
                             type="password"
                             onChange={this.handleChange}
                             label='password'
-                            placeholder='Password123...NOT!'
+
                         />
                         <Button classname="login_button" content='log in' primary onClick={this.handleLogin} />
                         <br></br><br></br>
-                        <Divider vertical>Don't have an account yet?</Divider>
                     </div>
                 </Form>
-                <div>
-                    <Button className="signup_button" onClick={this.handleSignup} content='sign up' icon='signup' size='big' />
-                </div>
-                <Divider vertical>Continue to page as guest</Divider>
+
                 <br></br>
             </div>
         )

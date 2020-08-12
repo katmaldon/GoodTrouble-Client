@@ -1,17 +1,16 @@
 import React from 'react';
-import AudioContainer from '../Components/AudioContainer';
-import BooksContainer from '../Components/BooksContainer';
-import VideoContainer from '../Components/VideoContainer';
+
+import BooksContainer from './BooksContainer';
+
 
 class MediaContainer extends React.Component {
 
    render() {
         return (
-            <div>
-                <BooksContainer/>
-                <AudioContainer/>
-                <VideoContainer/>
-            </div>
+            <div>MEDIA</div>
+            // <div>
+            //     <BooksContainer/>
+            // </div>
         );
     };
 };

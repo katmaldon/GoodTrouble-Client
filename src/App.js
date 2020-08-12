@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Route, Switch } from "react-router-dom";
+
 import Header from './Components/Header';
-// import About from './Components/About';
-// import Login from './Components/Login';
-// import SignUp from './Components/Signup'
 import Navbar from './Components/Navbar';
-// import Home from './Components/Home';
-// import EventsContainer from './Containers/EventsResourcesContainer';
-//  import UserContainer from './Containers/UserContainer'
+//import Login from './Components/Login';
+//import Signup from './Components/Signup'
+import HomeContainer from './Containers/HomeContainer';
+import ProfileContainer from './Containers/ProfileContainer'
+import CommunityContainer from './Containers/CommunityContainer';
+import MediaContainer from './Containers/MediaContainer'
+import ActNowContainer from './Containers/ActNowContainer'
+import About from './Components/About';
+import Quote from './Components/Quote';
 
 
-// import { Route, Switch } from "react-router-dom";
 
 class App extends Component {
 
@@ -65,21 +69,19 @@ class App extends Component {
         return (
             <div className='App'>
                 <Navbar
-                    //currentUser={this.state.currentUser}
+                //currentUser={this.state.currentUser}
                 />
                 <Header />
-                {/* <Switch>
-                    <Route path='/login' component={Login} />} />
-                    <Route path='/signup' component={Signup}/>
-                    <Route path='/events' render={() => <EventsResourcesContainer />} />
-                    <Route path='/media' render={() => <MediaContainer />} />
-                    <Route path='/engagement' render={() => <EngagementContainer /> <PetitionsContainer />} />
-                    <Route path='/digests' render={() => <AudiosContainer /> <BooksContainer/> <VideosContainer/>} />
-                    <Route path='/user' render={() => <UserContainer />} />
-                    <Route path='/about' render={() => <About />} />
-                    <Route path='/' component={Home} />
-                    <Route render={() => <h1>WHOOPS! Wrong way...</h1>} />
-                </Switch> */}
+                <Quote />
+                    <Switch>
+                        <Route path='/community' render={() => <CommunityContainer />} />
+                        <Route path='/media' render={() => <MediaContainer />} />
+                        <Route path='/actnow' render={() => <ActNowContainer />} />
+                        <Route path='/profile' render={() => <ProfileContainer />} />
+                        <Route path='/about' render={() => <About />} />
+                        <Route exact path='/' component={HomeContainer} />
+                    </Switch>
+
                 <footer>© {new Date().toISOString().substring(0, 4)} Kat Maldon</footer>
             </div>
         );
