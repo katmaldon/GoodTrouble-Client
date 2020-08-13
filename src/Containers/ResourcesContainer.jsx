@@ -1,22 +1,22 @@
 import React from 'react';
-//import ResourcesCollection from '../Components/ResourcesCollection';
+import ResourcesCollection from '../Components/ResourcesCollection';
 
 class ResourcesContainer extends React.Component {
-    // state = {
-    //     resources: []
-    // }
+    state = {
+        resources: []
+    }
 
-    // fetchResources = () => {
-    //     fetch('http://localhost:3000/resources')
-    //         .then(r => r.json())
-    //         .then(resources => {
-    //             this.setState({ resources });
-    //         });
-    // };
+    fetchResources = () => {
+        fetch('http://localhost:3000/resources')
+            .then(r => r.json())
+            .then(resources => {
+                this.setState({ resources });
+            });
+    };
 
-    // componentDidMount() {
-    //     this.fetchResources()
-    // };
+    componentDidMount() {
+        this.fetchResources()
+    };
 
     // highlightResource = (id) => {
     //     let highlightedArr = this.state.resources.map(resource => {
@@ -50,17 +50,16 @@ class ResourcesContainer extends React.Component {
     //         })
     // };
 
-    // render() {
-    //     return (
-    //         <div>
-    //             <ResourcesCollection
-    //                 resources={resources}
-    //                 handleHighlight={this.handleHighlight}
-    //                 highlightResource={this.highlightResource}
-    //             />
-    //         </div>
-    //     );
-    // };
+    render() {
+        return (
+            <div>
+                <ResourcesCollection
+                    // handleHighlight={this.handleHighlight}
+                    // highlightResource={this.highlightResource}
+                />
+            </div>
+        );
+    };
 };
 
 export default ResourcesContainer;

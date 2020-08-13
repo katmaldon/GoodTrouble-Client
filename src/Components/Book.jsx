@@ -7,7 +7,7 @@ class Book extends Component {
             <div className="books_list">
                 <div className="books_cards">
                     BOOKS
-                    </div>
+                </div>
             </div>
         );
     }

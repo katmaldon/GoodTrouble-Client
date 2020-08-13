@@ -1,16 +1,19 @@
 import React from 'react';
 import EventsContainer from './EventsContainer';
-import ResourcesContainer from './ResourcesContainer';
+//import ResourcesContainer from './ResourcesContainer';
 
 class CommunityContainer extends React.Component {
 
-   render() {
+    render() {
         return (
-            <div>COMMUNITY</div>
-            // <div>
-            //     <EventsContainer/>
-            //     <ResourcesContainer/>
-            // </div>
+
+            <div>
+                <EventsContainer />
+                {/* <ResourcesContainer/> */}
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+            </div>
+
         );
     };
 };

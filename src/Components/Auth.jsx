@@ -23,9 +23,9 @@ class Auth extends React.Component {
         const { username, password } = this.state;
         return (
             <>
-                <input name="username" placeholder="username" value={username} onChange={this.handleChange}/>
+                <input name="username" placeholder="username" value={username} onChange={this.handleChange} />
                 <br></br><br></br>
-                <input name="password" placeholder="password" type="password" value={password} onChange={this.handleChange}/>
+                <input name="password" placeholder="password" type="password" value={password} onChange={this.handleChange} />
                 <br></br><br></br>
             </>
         )
@@ -35,23 +35,24 @@ class Auth extends React.Component {
         const { username, password, confirmation } = this.state;
         return (
             <>
-                <input name="username" placeholder="username" value={username} onChange={this.handleChange}/>
+                <input name="username" placeholder="username" value={username} onChange={this.handleChange} />
                 <br></br><br></br>
-                <input name="password" placeholder="password" type="password" value={password} onChange={this.handleChange}/>
+                <input name="password" placeholder="password" type="password" value={password} onChange={this.handleChange} />
                 <br></br><br></br>
-                <input name="confirmation" placeholder="confirm password"  type="password" value={confirmation} onChange={this.handleChange}/><br></br><br></br>
+                <input name="confirmation" placeholder="confirm password" type="password" value={confirmation} onChange={this.handleChange} /><br></br><br></br>
             </>
         )
     }
 
-    render(){
+    render() {
         let { isNewUser } = this.state;
         return (
             <div className="simple-flex-col">
-                <h2>{isNewUser ? "Don't have an account yet? Sign up:" : "Login"}</h2>
-                { isNewUser ? this.renderSignup() : this.renderLogin() }
-                <button type="submit" onClick={this.handleSubmit}>submit</button><br></br><br></br>
-                <div onClick={this.toggleNewUser}>{isNewUser ? "Already signed up? Log in." : "new here? sign up"}</div>
+                <h2>{isNewUser ? "Don't have an account yet? Sign up:" : "Welcome back:"}</h2>
+                {isNewUser ? this.renderSignup() : this.renderLogin()}
+                <button className="button" type="submit" onClick={this.handleSubmit}>submit</button><br></br><br></br>
+                <div className="authtoggle" onClick={this.toggleNewUser}>{isNewUser ? "Already signed up? Log in." : "New here? Sign up."}</div>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
             </div>
         )
     }

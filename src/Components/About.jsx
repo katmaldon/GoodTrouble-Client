@@ -6,8 +6,11 @@ class About extends React.Component {
         return (
             <section>
                 <div className="about">
-                    <h2>What is Good Trouble</h2>
+                    <h2>What is Good Trouble?</h2>
+                    <p>Lorem.</p>
                 </div>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+
             </section>
         );
     }
