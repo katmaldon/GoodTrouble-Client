@@ -4,13 +4,22 @@ import Book from "./Book";
 const BooksCollection = (props) => {
 
     return (
-        <div className="book_cards">
-            {props.books.map(book =>
-                <Book key={book.id}
-                    {...book}
-                />
-            )}
-        </div>
+        <table className="books_table">
+            <tbody>
+                <tr>
+                    <th>
+                        <h3 className="ui center aligned header">title</h3>
+                    </th>
+                    <th>
+                        <h3 className="ui center aligned header">description</h3>
+                    </th>
+                    <th>
+                        <h3 className="ui center aligned header">url</h3>
+                    </th>
+                </tr>
+            {props.books.map(book => <Book key={book.id} {...book} />)}
+            </tbody>
+        </table>
     );
 };
 

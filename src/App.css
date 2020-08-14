@@ -1,251 +1,273 @@
 /* change styling, placeholders to have render to start from */
 
 .App {
-    text-align: center;
-    background-image: url('https://i.imgur.com/LmM3HeA.jpg?1');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: white;
-    webkit-background-size: cover;
-    max-height: 300em;
-    font-family: 'Courier';
-    color: black;
-    }
-
-
-  .user_name {
-  float:left;
-  display:inline;
-  width: auto;}
-
-
-  #Header {
-    max-height: max-content;
-    width: 1024px;
-    background-color: white;
-    display: block;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 50px;
+  text-align: center;
+  background-image: url("https://i.imgur.com/LmM3HeA.jpg?1");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: white;
+  webkit-background-size: cover;
+  max-height: 300em;
+  font-family: "Courier";
+  color: black;
 }
 
-  h6 {
-      font-size: -webkit-xxx-large;
-  }
+#Header {
+  max-height: max-content;
+  width: 1024px;
+  background-color: white;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px;
+}
+/* header background is #e5e3e6 */
 
-  footer {
-      padding-top: 25px;
-      color: aliceblue;
-  }
+footer {
+  padding-top: 25px;
+  color: aliceblue;
+}
 
-  .navbar {
-      background-color: white;
-      min-height: 20px;
-      padding: 5px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-around;
-      font-size: 16px;
-      font-weight: 400;
-      text-shadow: 1px 1px rgb(0, 110, 129);
-      color: darkblue;
-      cursor: grab;
-  }
+.user_name {
+  float: left;
+  background: rgb(38 70 98);
+  width: 50%;
+  height: 100px;
+  width: auto;
+}
 
-  .navbar:hover {
-      color: orangered;
-  }
+.navbar {
+  background-color: white;
+  min-height: 20px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  font-size: 16px;
+  font-weight: 400;
+  text-shadow: 1px 1px rgb(0, 110, 129);
+  color: darkblue;
+}
 
+.navbar:hover {
+  color: orangered;
+}
 
-  .body {
-    background-color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
+.body {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
 
-  }
+h1 {
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 2px rgb(0, 14, 206);
+  margin-left: 10px;
+}
 
-  h1 {
-      align-items: center;
-      color: rgb(255, 255, 255);
-      text-shadow: 1px 2px rgb(0, 14, 206);
-      margin-left: 10px;
-  }
+h2 {
+  color: white;
+  text-shadow: 1px 1px rgb(139, 0, 0);
+}
 
-  h2 {
-      color: white;
-      text-shadow: 1px 1px rgb(139, 0, 0);
-  }
+h3 {
+  color: rgba(3, 2, 85, 0.973);
+  margin-left: 10px;
+}
 
-  h3 {
-      color: rgba(3, 2, 85, 0.973);
-      margin-left: 10px;
-  }
+h4 {
+  color: rgb(0, 17, 175);
+  margin-left: 10px;
+}
 
-  h4 {
-      color: rgb(0, 17, 175);
-      margin-left: 10px;
-  }
-
-  p {
+p {
   color: #057fd0;
+}
 
-  }
+a:hover {
+    color: orangered;
+}
 
-  .about p {
-      color: white;
-      text-shadow: 1px 1px #057fd0;
-  }
+.about p {
+  color: white;
+  text-shadow: 1px 1px #057fd0;
+}
 
-  .user_card {
-      align-items: center;
-      text-align: center;
-      display: block;
-      background-color: #003152;
-      width: auto;
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
-      opacity: 0.85;
-      padding: 15px;
-      color: white;
-      border: grey solid 1px;
-      display: inline-grid;
-      margin: 0.5rem 0.5rem;
-  }
+.user_card {
+  align-items: center;
+  text-align: center;
+  display: block;
+  background-color: #003152;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.85;
+  padding: 15px;
+  color: white;
+  border: grey solid 1px;
+  display: inline-grid;
+  margin: 0.5rem 0.5rem;
+}
 
-  .user_card img {
-    width: 200px;
-    height: auto;
-    align-content: center;
-  }
+.user_card img {
+  width: 100px;
+  height: auto;
+  align-content: center;
+  float: left;
+}
 
-  .event_cards {
-    align-items: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    margin: 5px;
-    grid-gap: 8px;
-    grid-template-columns: auto auto auto;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 2px rgb(196, 17, 91);
-    opacity: 0.9;
-  }
+.events_table {
+  align-content: center;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: table-row;
+  margin: 5px;
+  grid-gap: 8px;
+  grid-template-columns: auto auto auto;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 2px rgb(196, 17, 91);
+  opacity: 0.9;
+}
 
-  .card_detail {
-      background-color: white;
-      margin: 10px;
-      padding: 5px
-  }
+.card_detail {
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+}
 
-  .table {
-      text-align: left;
-      color: rgb(7, 67, 95);
-  }
+.table {
+  text-align: center;
+  color: rgb(7, 67, 95);
+}
 
-  .search {
-      background-color:rgb(255, 129, 0);
-      text-align: center;
-      position: relative;
-      display: block;
-      margin: 23px;
-      padding: 15px;
-      fill-opacity: inherit;
-      opacity: 0.7;
-  }
+.search {
+  background-color: rgb(255, 129, 0);
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: 23px;
+  padding: 15px;
+  fill-opacity: inherit;
+  opacity: 0.7;
+}
 
-  .searchWord {
-      text-align: center;
-      width: 100%;
-      border: 3px solid #ff0000;
-      padding: 5px;
-      height: 5rem;
-      border-radius: 5px;
-      outline: none;
-      font-size: 3rem;
-  }
+.searchWord {
+  text-align: center;
+  width: 100%;
+  border: 3px solid #ff0000;
+  padding: 5px;
+  height: 5rem;
+  border-radius: 5px;
+  outline: none;
+  font-size: 3rem;
+}
 
-  .card {
-      text-align: center;
-      color: aliceblue;
-      text-align: center;
-      border: grey solid 1px;
-      padding: 1rem;
-      width: 19rem;
-      height: 23rem;
-      display: inline-grid;
-      margin: 0.5rem 0.5rem;
-      box-shadow: 3px 4px #e04b52;
-      box-shadow: 0 0 black;
-      background-color: #eec553;
-      text-shadow: 1px 1px 0 grey;
-  }
+.card {
+  text-align: center;
+  color: aliceblue;
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: 19rem;
+  height: 23rem;
+  display: inline-grid;
+  margin: 0.5rem 0.5rem;
+  box-shadow: 3px 4px #e04b52;
+  box-shadow: 0 0 black;
+  background-color: #eec553;
+  text-shadow: 1px 1px 0 grey;
+}
 
-  .about {
-      text-align: center;
-      color: white;
-      text-align: center;
-      border: grey solid 1px;
-      padding: 20px;
-      width: 65%;
-      height: auto;
-      display: inline-grid;
-      margin: 0.5rem 0.5rem;
-      background-color: #4c667a;
-      opacity: 0.85;
-      font-size: 24px;
-      font-family: 'Courier';
-      text-shadow: 1px 1px 0 #057fd0;
-  }
+.about {
+  text-align: center;
+  color: white;
+  text-align: center;
+  border: grey solid 1px;
+  padding: 20px;
+  width: 65%;
+  height: auto;
+  display: inline-grid;
+  margin: 0.5rem 0.5rem;
+  background-color: #4c667a;
+  opacity: 0.85;
+  font-size: 24px;
+  font-family: "Courier";
+  text-shadow: 1px 1px 0 #057fd0;
+}
 
-  .button {
-      box-shadow: 0px 1px 0px 0px #f0f7fa;
-      background: linear-gradient(to bottom, maroon 5%, red 100%);
-      background-color: rgb(238 94 110);
-      border-radius: 5px;
-      border: 1px solid white;
-      display: inline-block;
-      cursor: pointer;
-      color: #ffffff;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 15px;
-      font-weight: bold;
-      width: fit-content;
-      padding: 6px 24px;
-      margin: 6px;
-      text-decoration: none;
-      display: inline-block;
-      align-items: center;
-      /* text-shadow: 1px -1px 9px #ba1870; */
-  }
+.button {
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  background: linear-gradient(to bottom, red 5%, maroon 100%);
+  background-color: rgb(238 94 110);
+  border-radius: 5px;
+  border: 1px solid white;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  font-weight: bold;
+  width: fit-content;
+  padding: 6px 24px;
+  margin: 6px;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  /* text-shadow: 1px -1px 9px #ba1870; */
+}
 
-  .button:hover {
-      background:linear-gradient(to bottom, navy 5%, darkgrey 100%);
-      background-color:#003346;
-  }
+.community_button {
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  background: linear-gradient(to bottom, red 5%, maroon 100%);
+  background-color: rgb(238 94 110);
+  border-radius: 5px;
+  border: 1px solid white;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  font-weight: bold;
+  width: fit-content;
+  padding: 3px 14px;
+  margin: 3px;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  /* text-shadow: 1px -1px 9px #ba1870; */
+}
 
-  .button:active {
-      position:relative;
-      top:1px;
-  }
+.community_button:hover {
+  background: linear-gradient(to bottom, darkgrey 5%, navy 100%);
+  background-color: #003346;
+}
 
-  .authtoggle:hover {
+.button:hover {
+  background: linear-gradient(to bottom, darkgrey 5%, navy 100%);
+  background-color: #003346;
+}
 
-    color: white;
-    cursor: pointer;
-  }
+.button:active {
+  position: relative;
+  top: 1px;
+}
 
+.authtoggle:hover {
+  color: white;
+  cursor: pointer;
+}
 
-  .App-link {
-      color: #61dafb;
-  }
-
-
+.App-link {
+  color: #61dafb;
+}

@@ -1,15 +1,15 @@
 import React from 'react';
 import EventsContainer from './EventsContainer';
-//import ResourcesContainer from './ResourcesContainer';
+import ResourcesContainer from './ResourcesContainer';
 
 class CommunityContainer extends React.Component {
 
     render() {
         return (
 
-            <div>
+            <div classname="community_container">
                 <EventsContainer />
-                {/* <ResourcesContainer/> */}
+                <ResourcesContainer/>
                 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
             </div>

@@ -8,7 +8,7 @@ const NotesCollection = (props) => {
             {props.notes.map(note =>
                 <Note key={note.id}
                     {...note}
-                    handleLike={props.handleLike}
+                    handleLike={props.handleCompleted}
                 />
             )}
         </div>

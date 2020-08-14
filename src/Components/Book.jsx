@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Book extends Component {
+const Book = (props) => {
 
-    render() {
-        return (
-            <div className="books_list">
-                <div className="books_cards">
-                    BOOKS
-                </div>
-            </div>
-        );
-    }
+
+    return (
+        <div className="books_list">
+            <tr>
+                <td>{props.title}</td>
+                <td>{props.description}</td>
+                {/* <td>{props.url}</td> */}
+                <td><button className="community_button" onClick={() => props.handleHighlight(props.id)}>buy now</button></td>
+            </tr>
+        </div>
+    );
 
 }
 

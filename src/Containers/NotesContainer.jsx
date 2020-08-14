@@ -28,6 +28,25 @@ class NotesContainer extends React.Component {
         });
     };
 
+    handleAddNote = (id) => {
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                text: this.props.text
+            })
+        }
+
+        fetch(`http://localhost:3000/notes/${id}`, options)
+            .then(res => res.json())
+            .then(e => {
+                this.addNote()
+            })
+    };
+
     completeNote = (id) => {
         let updatedNotes = this.state.notes.map(note => {
             if (note.id === id) {
@@ -77,19 +96,17 @@ class NotesContainer extends React.Component {
     };
 
 
-
     render() {
-
         return (
             <div>
                 <NotesCollection
-                    deleteNote={this.deleteNote}
-                    handleDelete={this.handleDelete}
+                    notes={this.state.notes}
                     completeNote={this.completeNote}
                     handleComplete={this.handleComplete}
                 />
                 <NotesForm
                     addNote={this.addNote}
+                    handleAddNote={this.handleAddNote}
                 />
             </div>
         );

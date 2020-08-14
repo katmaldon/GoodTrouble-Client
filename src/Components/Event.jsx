@@ -9,7 +9,7 @@ const Event = (props) => {
       <td>{props.time}</td>
       <td>{props.location}</td>
       <td>{props.url}</td>
-      {/* <td><button onClick={() => props.handleFavorite(props.id)}>DELETE</button></td> */}
+      <td><button className="community_button" onClick={() => props.handleFavorite(props.id)}>add to favorites</button></td>
     </tr>
   );
 };

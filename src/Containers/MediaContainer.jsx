@@ -1,19 +1,16 @@
 import React from 'react';
-
-import BooksCollection from '../Components/BooksCollection';
+import BooksContainer from '../Containers/BooksContainer';
 
 
 class MediaContainer extends React.Component {
 
    render() {
         return (
-            <div>MEDIA
+            <div classname="media_container">
+            <BooksContainer />
                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                 </div>
-            // <div>
-            //     <BooksCollection/>
-            // </div>
         );
     };
 };

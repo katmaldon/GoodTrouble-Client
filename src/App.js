@@ -11,6 +11,7 @@ import MediaContainer from './Containers/MediaContainer'
 import ActNowContainer from './Containers/ActNowContainer'
 import About from './Components/About';
 import Quote from './Components/Quote';
+import Auth from './Components/Auth';
 
 
 class App extends Component {
@@ -27,6 +28,8 @@ class App extends Component {
                     <Route path='/actnow' render={() => <ActNowContainer />} />
                     <Route path='/profile' render={() => <ProfileContainer />} />
                     <Route path='/about' render={() => <About />} />
+                    <Route path='/login' component={Auth}/>
+
                     <Route exact path='/' component={HomeContainer} />
                 </Switch>
                 <footer>© {new Date().toISOString().substring(0, 4)} Kat Maldon</footer>
