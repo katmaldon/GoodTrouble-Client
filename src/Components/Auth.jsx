@@ -47,12 +47,11 @@ class Auth extends React.Component {
     render() {
         let { isNewUser } = this.state;
         return (
-            <div className="simple-flex-col">
+            <div className="auth_container">
                 <h2>{isNewUser ? "Don't have an account yet? Sign up:" : "Welcome back:"}</h2>
                 {isNewUser ? this.renderSignup() : this.renderLogin()}
                 <button className="button" type="submit" onClick={this.handleSubmit}>submit</button><br></br><br></br>
                 <div className="authtoggle" onClick={this.toggleNewUser}>{isNewUser ? "Already signed up? Log in." : "New here? Sign up."}</div>
-                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
             </div>
         )
     }

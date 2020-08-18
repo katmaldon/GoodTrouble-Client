@@ -4,14 +4,18 @@ class About extends React.Component {
 
     render() {
         return (
-            <section>
+            <div>
+                <div><h2>"The function of freedom is to free someone else."</h2></div>
+                <div><h3>Toni Morrison</h3></div>
+                <br></br>
                 <div className="about">
                     <h2>What is Good Trouble?</h2>
-                    <p>Lorem.</p>
+                    <p>Good Trouble is a collection of information for community organizers and activists to stay informed and engaged with current events, petitions, community resources, and fundraisers.</p><br></br>
+                    <p>“Get in good trouble, necessary trouble, and help redeem the soul of America.” - Rep.John Lewis
+― John Lewis</p>
                 </div>
-                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
-            </section>
+            </div>
         );
     }
 

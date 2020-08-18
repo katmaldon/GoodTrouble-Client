@@ -4,7 +4,7 @@ import BooksCollection from '../Components/BooksCollection';
 class BooksContainer extends React.Component {
 
     state = {
-        books: []
+        books: [],
     }
 
     fetchBooks = () => {
@@ -19,12 +19,23 @@ class BooksContainer extends React.Component {
         this.fetchBooks()
     };
 
+    handleBuy = (id) => {
+        let buyBook = this.state.books.map(book => {
+            if (book.id === id) {
+                return book.url
+            }
+        })
+        return buyBook
+    }
+
 
     render() {
         return (
-            <div>
+            <div classname="books_container">
+            <div className="media_title"><h2>Books</h2></div>
                 <BooksCollection
                     books={this.state.books}
+                    handleBuy={this.handleBuy}
                 />
             </div>
         );

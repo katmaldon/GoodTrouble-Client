@@ -1,14 +1,14 @@
 import React from "react";
-import Resource from "./Resource";
+import Donation from "./Donation";
 
-const ResourcesCollection = (props) => {
+const DonationsCollection = (props) => {
 
     return (
         <table className="ui celled striped padded table">
             <tbody>
                 <tr>
                     <th>
-                        <h3 className="ui center aligned header">resource</h3>
+                        <h3 className="ui center aligned header">organization</h3>
                     </th>
                     <th>
                         <h3 className="ui center aligned header">description</h3>
@@ -16,16 +16,14 @@ const ResourcesCollection = (props) => {
                     <th>
                         <h3 className="ui center aligned header">url</h3>
                     </th>
+                    <th>
+                        <h3 className="ui center aligned header">donated</h3>
+                    </th>
                 </tr>
-            {props.resources.map(resource =>
-            <Resource key={resource.id}
-            {...resource}
-            handleHighlight={props.handleHighlight}
-
-            />)}
+            {props.donations.map(donation => <Donation key={donation.id} {...donation} handleDonate={props.handleDonate} />)}
             </tbody>
         </table>
     );
 };
 
-export default ResourcesCollection;
+export default DonationsCollection;

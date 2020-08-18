@@ -7,7 +7,7 @@ class ProfileContainer extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="profile-container">
 
                 <UserContainer />
                 <FavoritesContainer />
@@ -15,9 +15,6 @@ class ProfileContainer extends React.Component {
                     notes={this.notes}
                     addNote={this.addNote}
                 />
-
-
-                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
             </div>
         );
     }

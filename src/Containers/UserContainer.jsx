@@ -18,7 +18,7 @@ class UserContainer extends React.Component {
     render() {
 
         return (
-            <div>
+            <div className="user-container">
                 <User />
             </div>
         );

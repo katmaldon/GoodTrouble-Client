@@ -4,7 +4,7 @@ class Note extends Component {
 
     render() {
         return (
-            <div className="notes_list">
+            <div className="note">
                 <div className="notes_content">
                     <div>
                         {this.props.text}

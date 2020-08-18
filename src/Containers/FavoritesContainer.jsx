@@ -5,7 +5,7 @@ class FavoritesContainer extends Component {
     render() {
         return (
 
-            <div>
+            <div className="fav-container">
                 Favorites
             </div>
 

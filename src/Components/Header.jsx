@@ -3,9 +3,8 @@ import React from 'react'
 import { Header, Image } from 'semantic-ui-react'
 
 const HeaderImg = () => (
-    <Header as='h2'>
-        <Image src="https://i.imgur.com/jnfNclU.jpg" alt="GoodTrouble" id="header" />
-
+    <Header>
+        <Image src="https://i.imgur.com/jnfNclU.jpg?1" alt="GoodTrouble" id="header" />
     </Header>
 )
 

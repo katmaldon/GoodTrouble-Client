@@ -54,7 +54,8 @@ class EventsContainer extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="events_container">
+            <div className="community_title"><h2>Events</h2></div>
                 <EventsCollection
                     events={this.state.events}
                     handleFavorite={this.handleFavorite}
