@@ -54,12 +54,14 @@ class PetitionsContainer extends React.Component {
     render() {
         return (
             <div className="petitions-container">
+                <div className="media_title"><h2>Petitions</h2></div>
                 <PetitionsCollection
                     petitions={this.state.petitions}
                     handleSign={this.handleSign}
                     signPetition={this.signPetition}
                 />
             </div>
+
         );
     };
 };

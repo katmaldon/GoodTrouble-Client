@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FavoritesCollection from '../Components/FavoritesCollection'
 
 class FavoritesContainer extends Component {
 
@@ -6,9 +7,9 @@ class FavoritesContainer extends Component {
         return (
 
             <div className="fav-container">
-                Favorites
+                <div className="media_title"><h2>Bookmarked Events & Resources</h2></div>
+                {/* <FavoritesCollection /> */}
             </div>
-
         );
     }
 }

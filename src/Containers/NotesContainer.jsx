@@ -99,16 +99,16 @@ class NotesContainer extends React.Component {
     render() {
         return (
             <div className="notes-container">
+                <div className="notes-form">
+                    <NotesForm
+                        addNote={this.addNote}
+                        handleAddNote={this.handleAddNote}
+                    /></div>
                 <div className="notes-list">
                     <NotesCollection
                         notes={this.state.notes}
                         completeNote={this.completeNote}
                         handleComplete={this.handleComplete}
-                    /></div>
-                <div className="notes-form">
-                    <NotesForm
-                        addNote={this.addNote}
-                        handleAddNote={this.handleAddNote}
                     /></div>
             </div>
         );

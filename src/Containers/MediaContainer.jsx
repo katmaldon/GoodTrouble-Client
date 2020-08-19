@@ -1,6 +1,7 @@
 import React from 'react';
-import BooksContainer from '../Containers/BooksContainer';
-
+import BooksContainer from './BooksContainer';
+import VideosContainer from './VideosContainer'
+import TwitterContainer from './TwitterContainer'
 
 class MediaContainer extends React.Component {
 
@@ -11,8 +12,9 @@ class MediaContainer extends React.Component {
                 <div><h3>Dr. Maya Angelou</h3></div>
                 <br></br>
                 <div classname="media_container">
+                    <VideosContainer />
                     <BooksContainer />
-                //tweets and RSS ?
+                    <TwitterContainer />
                 </div>
             </div>
         );

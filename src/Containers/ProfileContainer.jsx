@@ -1,6 +1,6 @@
 import React from 'react';
 import UserContainer from './UserContainer'
-import NotesContainer from './NotesContainer'
+
 import FavoritesContainer from './FavoritesContainer'
 
 class ProfileContainer extends React.Component {
@@ -11,10 +11,6 @@ class ProfileContainer extends React.Component {
 
                 <UserContainer />
                 <FavoritesContainer />
-                <NotesContainer
-                    notes={this.notes}
-                    addNote={this.addNote}
-                />
             </div>
         );
     }

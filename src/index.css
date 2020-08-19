@@ -27,6 +27,10 @@ footer {
   color: aliceblue;
 }
 
+td {
+    max-width: 300;
+}
+
 .navbar {
   background-color: white;
   min-height: 20px;
@@ -95,11 +99,11 @@ a:hover {
   text-align: center;
   display: flex;
   flex-direction: row;
-  background-color: #003152;
-  width: 55%;
-  margin: 30px;
+  background-color: #556b7a;
+  margin-left: 200px;
+  margin-right: 200px;
   opacity: 0.85;
-  padding: 15px;
+  padding-top: 25px;
   color: white;
   border: grey solid 1px;
   justify-content: space-evenly;
@@ -108,9 +112,9 @@ a:hover {
 .user_image {
   display: flex;
   flex-direction: row;
-  width: 100px;
-  height: 100px;
-  justify-content: flex-start;
+  width: 150px;
+  height: 150px;
+  justify-content: space-evenly;
 }
 
 .user_content {
@@ -150,15 +154,24 @@ a:hover {
   opacity: 0.9;
 }
 
+.books_table {
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    align-items: center;
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+
+
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px rgb(196, 17, 91);
+    opacity: 0.9;
+  }
+
 .card_detail {
   background-color: white;
   margin: 10px;
   padding: 5px;
-}
-
-.table {
-  text-align: center;
-  color: rgb(7, 67, 95);
 }
 
 .search {
@@ -285,24 +298,37 @@ a:hover {
   color: #61dafb;
 }
 
-.donations-container {
+.act-now {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 10px;
+  justify-content: space-evenly;
+  max-width: 100;
+}
+
+.donations-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    background-color: rgb(141, 181, 207);
+    opacity: .8;
 }
 
 .petitions-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 10px;
-}
-
-.act-now {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    background-color: rgb(141, 181, 207);
+    opacity: .8;
 }
 
 .fav-container {
@@ -311,26 +337,6 @@ a:hover {
   justify-content: center;
   margin: 10px;
   height: 300px;
-}
-
-.notes-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.notes-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 10px;
-}
-
-.notes-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 10px;
 }
 
 .community_container {
@@ -346,11 +352,20 @@ a:hover {
     margin: 50px;
     padding-bottom: 20px;
     background-color: rgb(141, 181, 207);
-    opacity: .7;
+    opacity: .8;
 }
 
 .community_title {
-    background-color: aliceblue;
+    background-color: rgb(171, 195, 214);
+}
+
+.profile_title {
+    background-color: rgb(171, 195, 214);
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 2px;
 }
 
 .resources_container {
@@ -360,7 +375,7 @@ a:hover {
     margin: 50px;
     padding-bottom: 20px;
     background-color: rgb(141, 181, 207);
-    opacity: .7;
+    opacity: .8;
 }
 
 .media_container {
@@ -374,11 +389,35 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     margin: 50px;
-    padding-bottom: 20px;
+    padding: 10px;
     background-color: rgb(141, 181, 207);
-    opacity: .7;
+    opacity: .9;
 }
 
+.videos_collection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(141, 181, 207);
+    opacity: .9;
+  }
+
+  .video {
+      max-width: 300px;
+      opacity: 1;
+      margin: 30px;
+  }
+
 .media_title {
-    background-color: aliceblue;
+    background-color: rgb(171, 195, 214);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 5px;
 }

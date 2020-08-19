@@ -1,10 +1,7 @@
 import React from "react";
 import Event from "./Event";
 
-
-
 const EventsCollection = (props) => {
-
 
     return (
         <table className="ui celled striped padded table">
@@ -27,11 +24,11 @@ const EventsCollection = (props) => {
                     </th>
                 </tr>
                 {props.events.map(event =>
-                <Event key={event.id}
-                {...event}
-                handleLike={props.handleFavorite}
-                favoriteEvent={props.favoriteEvent}
-                />)}
+                    <Event key={event.id}
+                        {...event}
+                        handleLike={props.handleFavorite}
+                        favoriteEvent={props.favoriteEvent}
+                    />)}
             </tbody>
         </table>
     );

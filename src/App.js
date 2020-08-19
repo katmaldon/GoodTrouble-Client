@@ -11,7 +11,6 @@ import CommunityContainer from './Containers/CommunityContainer';
 import MediaContainer from './Containers/MediaContainer'
 import ActNowContainer from './Containers/ActNowContainer'
 import About from './Components/About';
-import Quote from './Components/Quote';
 import Auth from './Components/Auth';
 
 

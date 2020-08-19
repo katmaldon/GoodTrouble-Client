@@ -6,7 +6,7 @@ const Search = props => {
         <div className="search">
             <input
                 type="text"
-                placeholder={"search"}
+                placeholder={"looking for trouble?"}
                 onChange={(e) => props.handleSearch(e.target.value)}
             />
         </div>

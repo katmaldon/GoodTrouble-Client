@@ -14,13 +14,17 @@ const PetitionsCollection = (props) => {
                         <h3 className="ui center aligned header">description</h3>
                     </th>
                     <th>
-                        <h3 className="ui center aligned header">recipient</h3>
+                        <h3 className="ui center aligned header">website</h3>
                     </th>
                     <th>
-                        <h3 className="ui center aligned header">signed</h3>
+                        <h3 className="ui center aligned header">add your name</h3>
                     </th>
                 </tr>
-            {props.petitions.map(petition => <Petition key={petition.id} {...petition} handleSign={props.handleSign} />)}
+                {props.petitions.map(petition =>
+                    <Petition key={petition.id}
+                        {...petition}
+                        signNow={props.signNow}
+                    />)}
             </tbody>
         </table>
     );

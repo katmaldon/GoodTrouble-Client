@@ -14,13 +14,17 @@ const DonationsCollection = (props) => {
                         <h3 className="ui center aligned header">description</h3>
                     </th>
                     <th>
-                        <h3 className="ui center aligned header">url</h3>
+                        <h3 className="ui center aligned header">website</h3>
                     </th>
                     <th>
-                        <h3 className="ui center aligned header">donated</h3>
+                        <h3 className="ui center aligned header">contribute</h3>
                     </th>
                 </tr>
-            {props.donations.map(donation => <Donation key={donation.id} {...donation} handleDonate={props.handleDonate} />)}
+                {props.donations.map(donation =>
+                    <Donation key={donation.id}
+                        {...donation}
+                        handleDonate={props.handleDonate}
+                    />)}
             </tbody>
         </table>
     );

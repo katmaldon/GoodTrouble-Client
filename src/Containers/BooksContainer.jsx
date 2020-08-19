@@ -28,11 +28,10 @@ class BooksContainer extends React.Component {
         return buyBook
     }
 
-
     render() {
         return (
             <div classname="books_container">
-            <div className="media_title"><h2>Books</h2></div>
+                <div className="media_title"><h2>Recommended Reading</h2></div>
                 <BooksCollection
                     books={this.state.books}
                     handleBuy={this.handleBuy}
