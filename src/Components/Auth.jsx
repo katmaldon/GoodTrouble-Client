@@ -1,11 +1,10 @@
 import React from 'react';
-import {Redirect} from 'react-router-dom';
 
 class Auth extends React.Component {
 
     constructor(props, ownProps) {
         super(props)
-        debugger
+
         this.state = {
             isNewUser: false,
             username: '',
@@ -15,15 +14,17 @@ class Auth extends React.Component {
 
     }
 
+
     toggleNewUser = () => this.setState(prevState => ({ isNewUser: !prevState.isNewUser, username: '', password: '', confirmation: '' }))
 
     handleChange = e => this.setState({ [e.target.name]: e.target.value })
 
     handleSubmit = e => {
+        console.log(this.props)
         const { isNewUser, password, confirmation, username } = this.state;
-        // isNewUser
-        //     ? password === confirmation ? <Redirect to='/profile'/> : alert('try again!')
-        //     : <Redirect to='/events'/>
+        isNewUser
+            ? password === confirmation ? this.props.props.history.push('/profile') : alert('try again!')
+            : this.props.props.history.push('/profile')
     }
 
     renderLogin = () => {
@@ -59,6 +60,10 @@ class Auth extends React.Component {
                 {isNewUser ? this.renderSignup() : this.renderLogin()}
                 <button className="button" type="submit" onClick={this.handleSubmit.bind(this)}>submit</button><br></br><br></br>
                 <div className="authtoggle" onClick={this.toggleNewUser}>{isNewUser ? "Already signed up? Log in." : "New here? Sign up."}</div>
+            <br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br><br></br><br></br>
             </div>
         )
     }

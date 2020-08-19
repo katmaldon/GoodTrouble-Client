@@ -25,8 +25,8 @@ class App extends Component {
                     <Route path='/actnow' render={() => <ActNowContainer />} />
                     <Route path='/profile' render={() => <ProfileContainer />} />
                     <Route path='/about' render={() => <About />} />
-                    <Route path='/login' component={Auth} />
-                    <Route exact path='/' component={HomeContainer} />
+                    <Route path='/login' render={(routerProps) => <Auth {...routerProps} />} />
+                    <Route exact path='/' render={(routerProps) => <HomeContainer {...routerProps} />} />
                 </Switch>
                 <footer>© {new Date().toISOString().substring(0, 4)} Kat Maldon</footer>
             </div>
