@@ -4,6 +4,7 @@ import Favorite from "./Favorite";
 const FavoritesCollection = (props) => {
 
     return (
+
         <table className="favs_table">
             <tbody>
                 <tr>
@@ -17,11 +18,11 @@ const FavoritesCollection = (props) => {
                         <h3 className="ui center aligned header">website</h3>
                     </th>
                 </tr>
-                {/* {props.favorites.map(fav =>
+                {props.events.map(fav =>
                     <Favorite key={fav.id}
                         {...fav}
-
-                    />)} */}
+                        removeFavorite={props.removeFavorite}
+                    />)}
             </tbody>
         </table>
     );

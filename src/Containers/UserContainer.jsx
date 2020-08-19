@@ -11,7 +11,6 @@ class UserContainer extends React.Component {
             </div>
         );
     };
-
 }
 
 export default UserContainer;

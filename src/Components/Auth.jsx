@@ -1,11 +1,18 @@
 import React from 'react';
+import {Redirect} from 'react-router-dom';
 
 class Auth extends React.Component {
-    state = {
-        isNewUser: false,
-        username: '',
-        password: '',
-        confirmation: '',
+
+    constructor(props, ownProps) {
+        super(props)
+        debugger
+        this.state = {
+            isNewUser: false,
+            username: '',
+            password: '',
+            confirmation: '',
+        }
+
     }
 
     toggleNewUser = () => this.setState(prevState => ({ isNewUser: !prevState.isNewUser, username: '', password: '', confirmation: '' }))
@@ -14,9 +21,9 @@ class Auth extends React.Component {
 
     handleSubmit = e => {
         const { isNewUser, password, confirmation, username } = this.state;
-        isNewUser
-            ? password === confirmation ? this.props.history.push('/profile') : alert('try again!')
-            : this.props.history.push('/events')
+        // isNewUser
+        //     ? password === confirmation ? <Redirect to='/profile'/> : alert('try again!')
+        //     : <Redirect to='/events'/>
     }
 
     renderLogin = () => {
@@ -50,7 +57,7 @@ class Auth extends React.Component {
             <div className="auth_container">
                 <h2>{isNewUser ? "Don't have an account yet? Sign up:" : "Welcome back:"}</h2>
                 {isNewUser ? this.renderSignup() : this.renderLogin()}
-                <button className="button" type="submit" onClick={this.handleSubmit}>submit</button><br></br><br></br>
+                <button className="button" type="submit" onClick={this.handleSubmit.bind(this)}>submit</button><br></br><br></br>
                 <div className="authtoggle" onClick={this.toggleNewUser}>{isNewUser ? "Already signed up? Log in." : "New here? Sign up."}</div>
             </div>
         )

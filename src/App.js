@@ -3,7 +3,6 @@ import './App.css';
 import { Route, Switch } from "react-router-dom";
 
 import Navbar from './Components/Navbar';
-//import Sidebar from './Components/Sidebar';
 import Header from './Components/Header';
 import HomeContainer from './Containers/HomeContainer';
 import ProfileContainer from './Containers/ProfileContainer'
@@ -13,11 +12,7 @@ import ActNowContainer from './Containers/ActNowContainer'
 import About from './Components/About';
 import Auth from './Components/Auth';
 
-
-
 class App extends Component {
-
-
 
     render() {
         return (

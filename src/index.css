@@ -156,15 +156,15 @@ a:hover {
 
 .books_table {
     justify-content: space-evenly;
-    background-color: aliceblue;
-    align-items: center;
+    background-color: rgb(141, 181, 207);
+    grid-gap: 8px;
+    grid-template-columns: auto auto auto;
     display: block;
     margin-left: 50px;
     margin-right: 50px;
-
-
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 2px rgb(196, 17, 91);
+    margin-bottom: 20px;
+    padding: 10px;
+    color: black;
     opacity: 0.9;
   }
 

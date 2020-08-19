@@ -26,8 +26,9 @@ const EventsCollection = (props) => {
                 {props.events.map(event =>
                     <Event key={event.id}
                         {...event}
-                        handleLike={props.handleFavorite}
+                        handleFavorite={props.handleFavorite}
                         favoriteEvent={props.favoriteEvent}
+                        favorites={props.favorites}
                     />)}
             </tbody>
         </table>

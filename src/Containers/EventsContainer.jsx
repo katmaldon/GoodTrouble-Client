@@ -4,14 +4,15 @@ import EventsCollection from "../Components/EventsCollection";
 class EventsContainer extends React.Component {
 
     state = {
-        events: []
+        events: [],
+        favorites: []
     }
 
     fetchEvents = () => {
         fetch('http://localhost:3000/events')
             .then(r => r.json())
-            .then(events => {
-                this.setState({ events });
+            .then(backendRes => {
+                this.setState({ events: backendRes.events, favorites: backendRes.favorites });
             });
     };
 
@@ -32,24 +33,25 @@ class EventsContainer extends React.Component {
         })
     }
 
-    handleFavorite = (id) => {
+    handleFavorite = (event_id) => {
         const options = {
-            method: 'PATCH',
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({
-                favorite: !this.props.favorite
+                event_id: event_id
             })
         }
 
-        fetch(`http://localhost:3000/events/${id}`, options)
+        fetch(`http://localhost:3000/user_events`, options)
             .then(res => res.json())
-            .then(e => {
-                this.favoriteEvent(id)
-            })
+            // .then(e => {
+            //     this.favoriteEvent
+            // })
     };
+
 
 
     render() {
@@ -58,6 +60,7 @@ class EventsContainer extends React.Component {
                 <div className="community_title"><h2>Events</h2></div>
                 <EventsCollection
                     events={this.state.events}
+                    favorites={this.state.favorites}
                     handleFavorite={this.handleFavorite}
                     favoriteEvent={this.favoriteEvent}
                 />
