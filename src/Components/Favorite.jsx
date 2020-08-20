@@ -8,7 +8,7 @@ const Favorite = (props) => {
             {/* <td>{props.description}</td> */}
             <td>{props.url}</td>
 
-            <td><button className="community_button" onClick={() => props.removeFavorite(props.id)}>remove</button></td>
+            <td><button className="community_button" onClick={() => props.removeFavorite(props.id)}>x</button></td>
         </tr>
     );
 

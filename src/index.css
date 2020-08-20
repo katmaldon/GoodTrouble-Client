@@ -20,7 +20,7 @@ code {
 }
 
 footer {
-  position: sticky;
+  position: static;
   align-content: center;
   bottom: 0;
   padding-top: 25px;
@@ -77,7 +77,7 @@ h3 {
 }
 
 h4 {
-  color: rgb(0, 17, 175);
+  color: rgb(12, 24, 136);
 }
 
 p {
@@ -93,6 +93,35 @@ a:hover {
   font-size: large;
   text-shadow: 1px 1px #057fd0;
 }
+
+
+.user p {
+    color: white;
+    font-size: large;
+    text-shadow: 1px 1px #057fd0;
+  }
+
+.welcome_blurb p {
+    color: white;
+    font-size: large;
+    text-shadow: 1px 1px #057fd0;
+  }
+
+  .welcome_blurb {
+    text-align: center;
+    color: white;
+    border: grey solid 1px;
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    display: inline-grid;
+    margin: 20px;
+    background-color: #4c667a;
+    opacity: 0.85;
+    font-size: 24px;
+    font-family: "Courier";
+    text-shadow: 1px 1px 0 #057fd0;
+  }
 
 .user {
   /* align-items: center; */
@@ -127,7 +156,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10px;
   justify-content: space-evenly;
 }
 
@@ -135,7 +163,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10px;
   justify-content: space-evenly;
 }
 
@@ -157,7 +184,7 @@ a:hover {
 .books_table {
     justify-content: space-evenly;
     background-color: rgb(141, 181, 207);
-    grid-gap: 8px;
+    grid-gap: 20px;
     grid-template-columns: auto auto auto;
     display: block;
     margin-left: 50px;
@@ -283,7 +310,7 @@ a:hover {
 
 .authtoggle:hover {
   color: white;
-  cursor: pointer;
+  cursor: ;
 }
 
 .auth_container {
@@ -324,8 +351,8 @@ a:hover {
     justify-content: center;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 0px;
-    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     padding-bottom: 20px;
     background-color: rgb(141, 181, 207);
     opacity: .8;
@@ -335,8 +362,12 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10px;
-  height: 300px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 30px;
+  background-color: rgb(141, 181, 207);
+  padding: 2px;
+  opacity: .8;
 }
 
 .community_container {
@@ -368,6 +399,16 @@ a:hover {
     padding: 2px;
 }
 
+.favorites_title {
+    background-color: rgb(171, 195, 214);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    opacity: .8;
+    /* padding: 2px; */
+}
+
 .resources_container {
     display: flex;
     flex-direction: column;
@@ -390,9 +431,23 @@ a:hover {
     justify-content: center;
     margin: 50px;
     padding: 10px;
+    scroll-padding-bottom: 30;
     background-color: rgb(141, 181, 207);
     opacity: .9;
 }
+
+.books_collection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(141, 181, 207);
+    opacity: .85;
+  }
 
 .videos_collection {
     display: flex;
@@ -404,20 +459,43 @@ a:hover {
     margin-bottom: 10px;
     padding: 10px;
     background-color: rgb(141, 181, 207);
-    opacity: .9;
+    opacity: .85;
   }
 
   .video {
-      max-width: 300px;
+      width: 350px;
       opacity: 1;
-      margin: 30px;
+      margin: 10px;
+  }
+
+  .twitter_container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(141, 181, 207);
+    margin-left: 50px;
+    margin-right: 50px;
+    opacity: .85;
+  }
+
+  .timeline {
+      max-width: 300px;
+      scroll-behavior: initial;
+      margin: 20px;
   }
 
 .media_title {
     background-color: rgb(171, 195, 214);
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 0px;
     padding: 5px;
+}
+
+.bvc {
+    margin-bottom: 20px;
+}
+
+.quote {
+    background-color: red;
 }

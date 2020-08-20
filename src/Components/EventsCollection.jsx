@@ -22,6 +22,9 @@ const EventsCollection = (props) => {
                     <th>
                         <h3 className="ui center aligned header">url</h3>
                     </th>
+                    <th>
+                        <h3 className="ui center aligned header">favorite</h3>
+                    </th>
                 </tr>
                 {props.events.map(event =>
                     <Event key={event.id}

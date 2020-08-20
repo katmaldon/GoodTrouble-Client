@@ -1,6 +1,7 @@
 import React from "react";
 
 const Resource = (props) => {
+
     return (
         <tr>
             <td>{props.title}</td>

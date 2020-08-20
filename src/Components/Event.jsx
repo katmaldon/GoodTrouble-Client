@@ -10,7 +10,7 @@ const Event = (props) => {
         }
     )[0];
 
-    let text = favorite ? " favorited " :  "add to favorites" ;
+    let text = favorite ? "favorited" :  "add to favorites" ;
 
 
     return (

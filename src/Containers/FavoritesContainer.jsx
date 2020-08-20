@@ -41,7 +41,7 @@ class FavoritesContainer extends Component {
         return (
 
             <div className="fav-container">
-                <div className="media_title"><h2>Bookmarked Events & Resources</h2></div>
+                <div className="community_title"><h2>Bookmarked Events & Resources</h2></div>
                 <FavoritesCollection
                     events={this.state.events}
                     removeFavorite={this.removeFavorite}

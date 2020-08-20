@@ -4,7 +4,7 @@ import Book from "./Book";
 const BooksCollection = (props) => {
 
     return (
-        <table className="books_table">
+        <table className="books_collection">
             <tbody>
                 <tr>
                     <th>
@@ -17,7 +17,7 @@ const BooksCollection = (props) => {
                         <h3 className="ui center aligned header">description</h3>
                     </th>
                     <th>
-                        <h3 className="ui center aligned header">order online</h3>
+                        <h3 className="ui center aligned header">order</h3>
                     </th>
                 </tr>
                 {props.books.map(book =>

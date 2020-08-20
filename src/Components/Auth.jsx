@@ -2,17 +2,12 @@ import React from 'react';
 
 class Auth extends React.Component {
 
-    constructor(props, ownProps) {
-        super(props)
-
-        this.state = {
-            isNewUser: false,
+   state = {
+            isNewUser: true,
             username: '',
             password: '',
             confirmation: '',
         }
-
-    }
 
 
     toggleNewUser = () => this.setState(prevState => ({ isNewUser: !prevState.isNewUser, username: '', password: '', confirmation: '' }))
@@ -23,8 +18,8 @@ class Auth extends React.Component {
         console.log(this.props)
         const { isNewUser, password, confirmation, username } = this.state;
         isNewUser
-            ? password === confirmation ? this.props.props.history.push('/profile') : alert('try again!')
-            : this.props.props.history.push('/profile')
+            ? password === confirmation ? this.props.props.history.push('/community') : alert('try again!')
+            : this.props.props.history.push('/community')
     }
 
     renderLogin = () => {
@@ -56,14 +51,16 @@ class Auth extends React.Component {
         let { isNewUser } = this.state;
         return (
             <div className="auth_container">
-                <h2>{isNewUser ? "Don't have an account yet? Sign up:" : "Welcome back:"}</h2>
+                <h2>{isNewUser ? "Ready to get in the fight?" : "Welcome back!"}</h2>
                 {isNewUser ? this.renderSignup() : this.renderLogin()}
                 <button className="button" type="submit" onClick={this.handleSubmit.bind(this)}>submit</button><br></br><br></br>
                 <div className="authtoggle" onClick={this.toggleNewUser}>{isNewUser ? "Already signed up? Log in." : "New here? Sign up."}</div>
             <br></br><br></br>
+            {/* <br></br><br></br>
             <br></br><br></br>
             <br></br><br></br>
-            <br></br><br></br><br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br> */}
             </div>
         )
     }

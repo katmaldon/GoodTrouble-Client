@@ -9,14 +9,15 @@ const FavoritesCollection = (props) => {
             <tbody>
                 <tr>
                     <th>
-                        <h3 className="ui center aligned header">title</h3>
+                        <h4 className="ui center aligned header">bookmark</h4>
                     </th>
                     <th>
-                        <h3 className="ui center aligned header">description</h3>
+                        <h4 className="ui center aligned header">website</h4>
                     </th>
                     <th>
-                        <h3 className="ui center aligned header">website</h3>
+                        <h4 className="ui center aligned header">remove</h4>
                     </th>
+
                 </tr>
                 {props.events.map(fav =>
                     <Favorite key={fav.id}

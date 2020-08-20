@@ -54,7 +54,7 @@ class DonationsContainer extends React.Component {
     render() {
         return (
             <div className="donations-container">
-                <div className="media_title"><h2>Donations</h2></div>
+                <div className="community_title"><h2>Donations</h2></div>
                 <DonationsCollection
                     donations={this.state.donations}
                     handleDonate={this.handleDonate}

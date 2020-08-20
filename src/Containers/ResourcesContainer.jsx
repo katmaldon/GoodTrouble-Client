@@ -54,7 +54,7 @@ class ResourcesContainer extends React.Component {
     render() {
         return (
             <div className="resources_container">
-            <div className="community_title"><h2>Resources</h2></div>
+            <div className="community_title"><h2>Community Resources & Legal Help</h2></div>
                 <ResourcesCollection
                     resources={this.state.resources}
                     handleHighlight={this.handleHighlight}
