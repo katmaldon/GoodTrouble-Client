@@ -15,18 +15,19 @@ function Video() {
                 </div>
                 <div className="video">
                     <ReactPlayer
-                        url="https://youtu.be/6_uYWDyYNUg"
+                        url="https://youtu.be/oFeoS41xe7w"
                         width={300}
                         height={200}
                     />
                 </div><br></br>
                 <div className="video">
                     <ReactPlayer
-                        url="https://youtu.be/oFeoS41xe7w"
+                        url="https://youtu.be/6_uYWDyYNUg"
                         width={300}
                         height={200}
                     />
-                </div>
+                </div><br></br>
+
 
             </div>
             <button className="community_button">learn more</button>

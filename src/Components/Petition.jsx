@@ -4,10 +4,10 @@ const Petition = (props) => {
 
     return (
             <tr>
-                <td>{props.cause}</td>
+                <td><h5 className="title">{props.cause}</h5></td>
                 <td>{props.description}</td>
-                <td>{props.url}</td>
-                <td><button className="community_button" onClick={() => props.signNow(props.id)}>sign now</button></td>
+                <td><h4 className="url">{props.url}</h4></td>
+                <td><button className="community_button" onClick={() => props.signNow(props.id)}><a href="https://www.standwithbre.com/#petition">sign now</a></button></td>
             </tr>
     );
 

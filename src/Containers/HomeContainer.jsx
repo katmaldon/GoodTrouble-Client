@@ -11,7 +11,7 @@ class HomeContainer extends React.Component {
             <div>
                 <div className="quote"><h2>"You must be bold, brave, and courageous and find a way... to get in the way."</h2></div>
                 <div><h3>Rep. John Lewis</h3></div>
-                <div className="welcome_blurb"><p>Welcome to Good Trouble, a community for organizers and activists, providing to change the status quo for a better, more equitable future.</p></div>
+                <div className="welcome_blurb"><p>Welcome to Good Trouble, a community of organizers and activists, providing tools and resources to create a better, more equitable world for all of us.</p></div>
 
                     <div className="auth">
                         <Auth

@@ -9,7 +9,10 @@ const FavoritesCollection = (props) => {
             <tbody>
                 <tr>
                     <th>
-                        <h4 className="ui center aligned header">bookmark</h4>
+                        <h4 className="ui center aligned header">event/resource</h4>
+                    </th>
+                    <th>
+                        <h4 className="ui center aligned header">details</h4>
                     </th>
                     <th>
                         <h4 className="ui center aligned header">website</h4>

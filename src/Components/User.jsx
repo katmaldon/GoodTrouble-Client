@@ -7,7 +7,7 @@ class User extends Component {
     render() {
         return (
             <div>
-                <div><h2>"If you believe in a cause, be willing to stand up for that cause with a million people or by yourself."</h2></div>
+                <div><h2 className="quote">"If you believe in a cause, be willing to stand up for that cause with a million people or by yourself."</h2></div>
                 <div><h3>Otis S. Johnson</h3></div><br></br>
                 <div className="profile_title"><h2>Your Profile</h2></div>
                 <div className="user"><br></br>

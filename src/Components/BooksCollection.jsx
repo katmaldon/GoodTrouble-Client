@@ -14,7 +14,7 @@ const BooksCollection = (props) => {
                         <h3 className="ui center aligned header">author</h3>
                     </th>
                     <th>
-                        <h3 className="ui center aligned header">description</h3>
+                        <h3 className="book-descr">description</h3>
                     </th>
                     <th>
                         <h3 className="ui center aligned header">order</h3>
